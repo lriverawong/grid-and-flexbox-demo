@@ -43,3 +43,35 @@ p {
   background: #eaeaea;
   color: #eee;
 }
+
+/* Header Showcase */
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  /* Need absolute as it will go over showcase div */
+  position: absolute ;
+  /* background: #333 url('https://static.pexels.com/photos/577585/pexels-photo-577585.jpeg'); */
+  background: #333 url('images/glasses-and-laptop.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* 
+    Be sure this is the same size of the parent #showcase
+    because we are placing it on top of it
+  */
+  height: 450px;
+  /*
+  Before the following - the image was ontop of all text in header.
+  The larger the number the closer it is to you. Hence the negative
+  value will place the image behind the text.
+  */
+  z-index: -1;
+  /* Fade the image */
+  opacity: 0.2;
+}
+
